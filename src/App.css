@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+*{
+ 
+  padding: 0px;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.sidebar{
   color: white;
+  background: rgb(0, 7, 61);
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  float: right;
+  position: fixed; 
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  box-shadow: -11px 3px 13px -4px rgba(0,0,0,0.58);
+  -webkit-box-shadow: -11px 3px 13px -4px rgba(0,0,0,0.58);
+  -moz-box-shadow: -11px 3px 13px -4px rgba(0,0,0,0.58);
+
+
+}
+.cards {
+ 
+   --card-gradient: #4286f4, #373B44;
+  --card-blend-mode: overlay;
+   --card-blend-mode: multiply;
+
+
+  border-radius: 0.5rem;
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+  padding: 1rem;
+  background-image: linear-gradient(var(--card-gradient),white max(9.5rem, 27vh));
+    overflow: hidden;
+    height: 29vh;
+    width: 26vh;
+   text-align: center;
+   margin-left: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+/* Additional demo display styles */
+* {
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+
+
+.card-wrapper {
+  list-style: none;
+  padding: 0.4rem;
+  margin: 0;
+  display: block;
+ float: left;
+  /* grid-gap: 1.5rem; */
+  max-width: 50vw;
+  width: 160ch;
+
+ margin: 1rem;
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.heading_style{
+  padding: 30px 0;
+  text-align: center;
+  font-family: "raleway",sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.btn-style{
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid #4286f4 ;
+  background-color: #4286f4;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  margin-top: 1rem;
 }
